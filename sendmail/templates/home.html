@@ -1,0 +1,17 @@
+<html>
+<header>
+    <title>Home</title>
+</header>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <div>
+        <p>
+            <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit">
+    </div>
+</form>
+</body>
+</html>
